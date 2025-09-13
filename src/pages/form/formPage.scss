@@ -1,0 +1,29 @@
+@import "../../shared/styles/colors.scss";
+
+.form-page {
+  height: calc(100vh - 92px);
+  margin-bottom: 92px;
+  overflow: auto;
+  background-color: $secondaryColor;
+  width: calc(100vw - 250px);
+  padding: 27px 37px;
+
+  @media (max-width: 1024px) {
+    height: calc(100vh - 167px);
+    width: 100vw;
+  }
+  @media (max-width: 600px) {
+    height: calc(100vh - 145px);
+    margin-bottom: 70px;
+  }
+
+  &__title {
+    margin: 0px 0px 17px 20px;
+    font-size: 20px;
+    font-weight: 700;
+    color: $primaryColor;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

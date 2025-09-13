@@ -1,0 +1,33 @@
+.Wrapper {
+  width: 100%;
+}
+
+.Label {
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #717579;
+  margin-bottom: 12px;
+  margin-top: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  position: relative;
+}
+.Label::first-letter {
+  text-transform: capitalize;
+}
+
+.Error {
+  font-size: 12px;
+  color: #f12832;
+}
+.HelperText {
+  font-size: 12px;
+  color: grey;
+}
+.Required {
+  color: #f1453d;
+}

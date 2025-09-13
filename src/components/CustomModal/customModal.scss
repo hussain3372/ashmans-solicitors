@@ -1,0 +1,252 @@
+@import "../../shared/styles/colors.scss";
+
+.modal-header {
+  height: 15px;
+  font-size: 18px;
+  color: $white;
+  padding: 18px 24px;
+  border-radius: 8px 8px 0px 0px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 500;
+  background: #0a2e48;
+
+  .primary_btn {
+    height: 32px;
+
+    .anticon {
+      color: $white;
+    }
+  }
+}
+
+.ant-modal-content {
+  padding: 0 !important;
+}
+
+.modal-content {
+  padding: 24px;
+
+  &__subtitle {
+    color: $textColor;
+    margin: -0px 0 0px 0;
+  }
+
+  .primary_round_btn,
+  .secondary_round_btn,
+  .red_round_btn {
+    border-radius: 8px;
+    height: 37px;
+  }
+}
+
+.modal-subtitle {
+  margin: 15px 0;
+}
+
+.select {
+  width: 890px !important;
+
+  @media (max-width: 906px) {
+    width: 100vw;
+  }
+
+  &-modal {
+    position: relative;
+    margin: 0 -16px 0 0;
+
+    &__row {
+      border-bottom: 1px solid $greyColor;
+      padding: 0 20px 0 0;
+
+      img {
+        cursor: pointer;
+      }
+    }
+
+    &__btns {
+      padding: 10px 0 0 0;
+    }
+
+    &__radio {
+      padding: 10px 0;
+      font-size: 14px;
+
+      width: 100%;
+    }
+
+    &__selector {
+      margin: 20px 0 20px 0;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden auto;
+      max-height: calc(100vh - 354px);
+    }
+
+    &__form-list-item {
+      display: flex;
+      align-items: center;
+      height: 50px;
+      width: 100%;
+      padding: 8px 0px;
+      border-bottom: 1px solid $greyColor;
+      font-size: 16px;
+      color: $primaryColor;
+      cursor: pointer;
+
+      &:first-child {
+        padding-top: 0px;
+      }
+
+      &:last-child {
+        padding-bottom: 0px;
+        border-bottom: none;
+      }
+
+      &-image {
+        min-width: 50px;
+        width: 50px;
+        height: 50px;
+        margin-right: 16px;
+        border: 1px solid $primaryColor;
+        border-radius: 50%;
+      }
+    }
+  }
+}
+
+.ant-modal-content:has(.lookup-modal) .modal-header {
+  background-color: #0a2e48;
+  color: white;
+}
+
+.lookup {
+  width: 890px !important;
+
+  @media (max-width: 906px) {
+    width: 100vw;
+  }
+
+  &-modal {
+    height: calc(100vh - 222px);
+
+    &__wrapper {
+      width: 100%;
+      padding: 20px 0px 30px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__card {
+      width: 100%;
+      margin-bottom: 44px;
+
+      &:last-child {
+        margin-bottom: 0px;
+      }
+
+      &-title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 20px;
+        background-color: $primaryColor;
+        font-size: 14px;
+        font-weight: 500;
+        color: $white;
+      }
+
+      &-btn {
+        padding: 8px 20px;
+        background-color: $darkBtnColor;
+        border: none;
+        border-radius: 35px;
+        font-family: "Montserrat", sans-serif;
+        font-size: 12px;
+        font-weight: 500;
+        color: $white;
+
+        &:hover {
+          background-color: $darkBtnColor !important;
+          border: none !important;
+          color: $white !important;
+        }
+      }
+
+      &-more {
+        position: absolute;
+        right: 370px;
+        bottom: -19px;
+        padding: 8px 24px;
+        background-color: $white;
+        box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.12);
+        border-radius: 100px;
+        font-family: "Montserrat", sans-serif;
+        font-size: 13px;
+        font-weight: 500;
+        color: initial;
+        cursor: pointer;
+
+        @media (max-width: 906px) {
+          right: calc(50vw - 85px);
+        }
+      }
+
+      &-content {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        row-gap: 27px;
+        column-gap: 10%;
+        padding-bottom: 16px;
+      }
+
+      &-section {
+        display: flex;
+        flex-direction: column;
+        row-gap: 27px;
+        width: 45% !important;
+
+        @media (max-width: 730px) {
+          width: 100% !important;
+        }
+      }
+
+      &-label {
+        margin-right: 10%;
+        font-size: 13px;
+        font-weight: 400;
+        color: $textColor;
+      }
+
+      &-value {
+        font-size: 12px;
+        font-weight: 500;
+        text-align: end;
+      }
+
+      &-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+      }
+    }
+  }
+}
+
+.ant-radio-checked {
+  .ant-radio-inner {
+    &::after {
+      transform: scale(1) !important;
+      content: url("../../shared/images/check.svg");
+      font-size: 16px;
+      background: linear-gradient(#0a2e48, #3485bf98);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}

@@ -1,0 +1,68 @@
+@import "../../../shared/styles/colors.scss";
+
+.login {
+  background-image: url("../../../shared//images/BG.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+
+  &__logo {
+    @media (max-width: 600px) {
+      width: 140px;
+    }
+  }
+
+  &__form {
+    background-color: $white;
+    width: 530px;
+    height: 72%;
+    border-radius: 40px;
+    flex-direction: column;
+    padding: 73px 34px;
+    margin: 0 20px;
+    max-height: 800px;
+
+    @media (max-width: 600px) {
+      max-height: 500px;
+    }
+  }
+
+  &__container {
+    flex-direction: column;
+    margin: 0 0 15px 0;
+  }
+
+  &__subtitle {
+    font-size: 16px;
+  }
+
+  &__title {
+    font-size: 35px;
+    font-weight: 500;
+
+    @media (max-width: 600px) {
+      font-size: 25px;
+    }
+  }
+
+  &__microsoft {
+    border: 1px solid $darkGrey;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    margin: 0 0 20px 0;
+
+    img {
+      width: 30px;
+      margin: 0 10px 0 0;
+    }
+  }
+
+  &__forgot {
+    font-size: 14px;
+    text-align: end;
+    cursor: pointer;
+    margin: 0 0 34px 0;
+  }
+}

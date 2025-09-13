@@ -1,0 +1,73 @@
+.container {
+  width: 100%;
+}
+
+.totals-container {
+  background: #0f3f62;
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 10px 10px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 6px;
+  & .total-title {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15.7711px;
+    line-height: 24px;
+    text-align: center;
+    color: #fff;
+    margin: 0;
+  }
+  & .total-value {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15.7711px;
+    line-height: 24px;
+    text-align: center;
+    color: #fff;
+    margin: 0;
+  }
+}
+
+.time-slot-container {
+  display: flex;
+  align-items: center;
+  padding: 10px 40px;
+  position: relative;
+  gap: 20px;
+}
+
+.time-slot-item {
+  flex: 1;
+  width: 40%;
+}
+
+.remove-slot-icon {
+  position: absolute;
+  right: 15px;
+  top: 53px;
+}
+
+.slot-add-button {
+  margin-top: 10px;
+  margin-left: 3.4%;
+}
+
+.title {
+  font-style: normal !important;
+  font-weight: 600 !important;
+  font-size: 16px !important;
+  color: #0f3f62;
+  padding: 16px 0;
+}
+.wrapper-form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}

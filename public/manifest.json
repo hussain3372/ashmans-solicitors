@@ -1,0 +1,17 @@
+{
+  "name": "Ashmans Solicitors",
+  "short_name": "Ashmans",
+  "theme_color": "#1c4c72",
+  "background_color": "#2196f3",
+  "display": "standalone",
+  "orientation": "landscape",
+  "scope": "/",
+  "start_url": ".",
+  "icons": [
+    {
+      "src": "../src/shared/images/pwa.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}

@@ -1,0 +1,140 @@
+@import "../../../../shared/styles/colors.scss";
+
+.offences {
+  width: 100%;
+  //margin: 36px 0 0 0;
+  border-radius: 16px;
+  color: $primaryColor;
+
+  &__wrapper {
+    // height: calc(100vh - 227px);
+    width: 100%;
+    border-radius: 15px;
+    background: var(--White, #fff);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.04);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 60px 0;
+  }
+
+  &__title {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 20px 0 0 0;
+  }
+  &__subtitle {
+    font-size: 14px;
+    font-weight: 400;
+    margin: 5px 0 26px 0;
+  }
+}
+
+.offence-modal {
+  .form-item {
+    @media (max-width: 1200px) {
+      width: 30% !important;
+    }
+    @media (max-width: 893px) {
+      width: 47.5% !important;
+    }
+    @media (max-width: 730px) {
+      width: 47.5% !important;
+    }
+    @media (max-width: 619px) {
+      width: 100% !important;
+    }
+  }
+
+  .modal-content {
+    padding: 0;
+    border-radius: 12px;
+  }
+
+  .ant-modal-body {
+    background-color: $secondaryColor;
+    border-radius: 12px;
+  }
+
+  &__form {
+    overflow: auto;
+    max-height: calc(100vh - 285.5px);
+    min-height: 250px;
+  }
+
+  &__discription {
+    color: var(--Text-Primary, #0f3f62);
+    font-size: 17px;
+    font-weight: 500;
+    margin: 0 0 20px 0;
+
+    img {
+      cursor: pointer;
+    }
+  }
+
+  &__item {
+    margin: 25px 0;
+    border-radius: 15px;
+    background: var(--White, #fff);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.04);
+    padding: 25px 22px;
+  }
+
+  &__btns {
+    padding: 15px 15px 15px 0;
+    background: white;
+    box-sizing: border-box;
+    border-radius: 0 0 12px 12px;
+  }
+
+  &__switch-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 18px 0 0 0;
+
+    .ant-switch {
+      margin: 0 15px 0 0;
+    }
+  }
+}
+
+.offence {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 24px 32px;
+  background-color: #375d79;
+  color: $white;
+  border-radius: 20px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
+  margin: 0 0 20px 0;
+
+  &:hover {
+    background: #214c6e;
+    color: #fff;
+
+    & > * {
+      color: #fff; // make children text black on hover
+    }
+  }
+
+  &__top-row {
+    font-size: 13px;
+    font-weight: 400;
+    display: grid !important;
+    grid-template-columns: 1fr 1fr 1fr !important;
+  }
+
+  &__bottom-row {
+    font-size: 14px;
+    font-weight: 600;
+    display: grid !important;
+    grid-template-columns: 1fr 1fr 1fr !important;
+  }
+
+  &__description {
+    width: 60%;
+  }
+}

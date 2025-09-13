@@ -1,0 +1,42 @@
+.ps-button {
+  width: 100%;
+  background-color: #0f3f62;
+  color: white;
+  height: 55px;
+  border-radius: 10px;
+}
+
+.ps-controls {
+  display: flex;
+  gap: 10px;
+  justify-content: end;
+}
+
+.bottom-elements {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  padding: 20px 0;
+  align-items: center;
+}
+
+.modal-content {
+  label {
+    color: #717579 !important;
+  }
+}
+
+.signature-block {
+  & .signature-label {
+    font-family: "Poppins";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: #717579;
+    margin-bottom: 12px;
+  }
+  & button {
+    height: 55px !important;
+  }
+}
