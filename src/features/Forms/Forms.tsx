@@ -41,6 +41,8 @@ export const Forms = () => {
   const pathFromViewToEdit = path.replace("view", "edit");
   const pathBackToCaseInfo = `${location.pathname.replace("/form", "")}?caseId=${caseId}`;
 
+
+  // fetch cases
   useEffect(() => {
     const fetchCases = async () => {
       try {
@@ -57,6 +59,9 @@ export const Forms = () => {
     if (caseId) fetchCases();
   }, [caseId]);
 
+
+  // save cases
+  // send data to the file in forSlice.tsx and then go to forms.tsx where endpoint is defined
   const handleSave = async () => {
     if (!caseId || !formId) return;
 
@@ -77,6 +82,8 @@ export const Forms = () => {
     }
   };
 
+  // update form
+
   const handleUpdate = async () => {
     if (!caseId || !formId) return;
 
@@ -94,6 +101,8 @@ export const Forms = () => {
       console.error(error);
     }
   };
+
+  // submit or create a form
 
   const handleSubmit = async () => {
     try {

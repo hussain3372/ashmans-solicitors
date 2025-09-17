@@ -1,14 +1,18 @@
 .Wrapper {
   width: 100%;
 }
-
+.togglewrapper {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
 .Label {
   font-family: "Poppins";
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   text-align: left;
-  color: #717579;
+  color: #1e5b87;
   margin-bottom: 12px;
   margin-top: 0;
   overflow: hidden;

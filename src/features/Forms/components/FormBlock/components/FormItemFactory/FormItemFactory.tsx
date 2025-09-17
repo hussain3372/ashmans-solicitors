@@ -529,8 +529,8 @@ export const FormItemFactory: FC<IProps> = ({ disabled, field, sectionId, type }
 
   const isDisabled =
     field.slug === "time-arrival-2" ||
-    field.slug === "relevant-time" ||
-    field.slug === "time-detention-authorised"
+      field.slug === "relevant-time" ||
+      field.slug === "time-detention-authorised"
       ? timeFieldsDisabled
       : field.slug === "custody-record-number" || field.slug === "custody-record-reviewed"
         ? custodyFieldsDisabled

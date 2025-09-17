@@ -132,12 +132,12 @@ const formSlice = createSlice({
                     ? field.repeatable
                     : field?.associated_field_value?.value
                       ? (() => {
-                          //const dateValue = dayjs(field?.associated_field_value?.value || "");
-                          // return dateValue.isValid()
-                          //   ? dateValue
-                          //   : field?.associated_field_value?.value;
-                          return field?.associated_field_value?.value || "";
-                        })()
+                        //const dateValue = dayjs(field?.associated_field_value?.value || "");
+                        // return dateValue.isValid()
+                        //   ? dateValue
+                        //   : field?.associated_field_value?.value;
+                        return field?.associated_field_value?.value || "";
+                      })()
                       : field?.default_value,
               };
 
