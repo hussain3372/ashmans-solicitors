@@ -185,10 +185,9 @@ export const AttendanceForm = ({ options, handleChange, value, disabled }) => {
 
     return !disabled && slotCount < limit ? (
       <Button
-        type="dashed"
         onClick={() => handleAdd(section)}
         icon={<PlusOutlined />}
-        style={{ marginTop: 16, width: "100%" }}
+        style={{ marginTop: 16, width: "100%", height: "40px" }}
       >
         Add Time Slot
       </Button>

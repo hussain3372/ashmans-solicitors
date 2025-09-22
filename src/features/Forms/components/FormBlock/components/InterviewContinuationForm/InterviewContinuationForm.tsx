@@ -20,26 +20,26 @@ export const InterviewContinuationForm = (props) => {
     value
       ? value
       : {
-          sections: [
-            {
-              "further-disclosure": "",
-              "further-consultation": "",
-              "further-advice": "",
-              "interview-signature": "",
-              "interview-date": "",
-              "case-specific": "",
-            },
-            {
-              "interview-interviewing-officers": "",
-              "interview-date-2": "",
-              "interview-start-time-2": null,
-              "interview-end-time-2": null,
-              "interview-other-persons-present": "",
-              "interview-details": "",
-              "interview-question-answer-repeater": [{ question2: "", answer: "" }],
-            },
-          ],
-        }
+        sections: [
+          {
+            "further-disclosure": "",
+            "further-consultation": "",
+            "further-advice": "",
+            "interview-signature": "",
+            "interview-date": "",
+            "case-specific": "",
+          },
+          {
+            "interview-interviewing-officers": "",
+            "interview-date-2": "",
+            "interview-start-time-2": null,
+            "interview-end-time-2": null,
+            "interview-other-persons-present": "",
+            "interview-details": "",
+            "interview-question-answer-repeater": [{ question2: "", answer: "" }],
+          },
+        ],
+      }
   );
 
   const handleOpenModal = () => {
@@ -333,7 +333,7 @@ export const InterviewContinuationForm = (props) => {
           </Row>
           <div className="wrapper-form">
             {answer?.map((pair, index, arr) => (
-              <Row gutter={16} key={index} style={{marginTop: 12}}>
+              <Row gutter={16} key={index} style={{ marginTop: 12 }}>
                 <Col span={12}>
                   <Input
                     value={pair.question2}
@@ -409,7 +409,7 @@ export const InterviewContinuationForm = (props) => {
   return (
     <div className="prepared-steatment-container">
       <Button onClick={handleOpenModal} className="ps-button">
-        Interview Continuation Form
+        Continue Interview (If Required)
       </Button>
       <CustomModal
         open={modal}

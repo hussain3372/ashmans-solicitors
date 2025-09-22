@@ -251,7 +251,9 @@ strong {
 
 .navigation-steps {
   display: flex !important;
-  flex-wrap: wrap !important;
+  overflow-x: auto;
+  scrollbar-width: thin;
+  -ms-overflow-style: auto;
   .ant-steps-item-title {
     font-size: 10px !important;
     line-height: 12px !important;
