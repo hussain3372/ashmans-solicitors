@@ -338,13 +338,13 @@ export default function useCaseController() {
       forename,
       surname,
       "date-birth": dayjs(formatDate(date_birth)),
-      "telephone-mobile": telephone_mobile,
-      "telephone-home": telephone_home,
-      "e-mail": e_mail,
+      "tel-mobile": telephone_mobile,
+      "tel-home": telephone_home,
+      "email-address": e_mail,
       address,
       "post-code": post_code,
       gender: gender.toLowerCase(),
-      "opt-marketing-e-mails": opt_marketing_e_mails,
+      "opt-marketing-email-addresss": opt_marketing_e_mails,
     };
   };
 
@@ -531,7 +531,7 @@ export default function useCaseController() {
                             <div className="lookup-modal__card-section">
                               {[
                                 { label: "Telephone Number", value: telephone_home },
-                                { label: "E-mail", value: e_mail },
+                                { label: "email-address", value: e_mail },
                                 { label: "Gender", value: gender },
                                 { label: "Disability", value: disability },
                                 { label: "Funding", value: funding },
@@ -546,7 +546,7 @@ export default function useCaseController() {
                               {[
                                 { label: "Mobile Number", value: telephone_mobile },
                                 {
-                                  label: "Opt-in to marketing e-mails?",
+                                  label: "Opt-in to marketing email-addresss?",
                                   value: opt_marketing_e_mails,
                                 },
                                 { label: "Ethnicity", value: ethnicity },
@@ -560,7 +560,7 @@ export default function useCaseController() {
                               ))}
                             </div>
                             <div className="lookup-modal__card-row">
-                              <div className="lookup-modal__card-label">Agent E-mail</div>
+                              <div className="lookup-modal__card-label">Agent email-address</div>
                               <div className="lookup-modal__card-value">{agent_email}</div>
                             </div>
                           </>

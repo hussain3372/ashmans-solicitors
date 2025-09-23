@@ -168,9 +168,9 @@ export const Case = () => {
                           { slug: "forename" },
                           { slug: "surname" },
                           { slug: "date-birth" },
-                          { slug: "telephone-mobile", label: "Mobile number" },
-                          { slug: "telephone-home", label: "Telephone number" },
-                          { slug: "e-mail" },
+                          { slug: "tel-mobile", label: "Mobile number" },
+                          { slug: "tel-home", label: "Telephone number" },
+                          { slug: "email-address" },
                           { slug: "address", label: "Address" },
                           { slug: "post-code" },
                         ]}
@@ -182,7 +182,7 @@ export const Case = () => {
                     <div>
                       <div className="form-item-wrapper">
                         <FormItems
-                          itemsData={[{ slug: "opt-marketing-e-mails" }]}
+                          itemsData={[{ slug: "opt-marketing-email-addresss" }]}
                           fields={fields}
                           setSlug={setSlug}
                           itemDisabled={!!isView}
