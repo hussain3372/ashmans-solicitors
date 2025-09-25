@@ -11,7 +11,7 @@
   align-items: center;
   justify-content: space-between;
   font-weight: 500;
-  background: #0a2e48;
+  background: #1e5b87;
 
   .primary_btn {
     height: 32px;
@@ -117,10 +117,10 @@
   }
 }
 
-.ant-modal-content:has(.lookup-modal) .modal-header {
-  background-color: #0a2e48;
-  color: white;
-}
+// .ant-modal-content:has(.lookup-modal) .modal-header {
+//   background-color: #0a2e48;
+//   color: white;
+// }
 
 .lookup {
   width: 890px !important;

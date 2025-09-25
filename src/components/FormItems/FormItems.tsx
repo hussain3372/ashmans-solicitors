@@ -22,7 +22,6 @@ export interface ItemsDataI {
   disabled?: boolean;
   isTextArea?: boolean;
   fromOtherItems?: FromOtherItemsI[];
-  forceNotRequired?: boolean; // 👈 add this
 
 }
 
@@ -90,17 +89,14 @@ export const FormItems: FC<{
                   type !== 19 && (
                     <span className="form-label">
                       {itemLabel ?? (label ? label : name)}
-                      {/* Show * only if required AND not forceNotRequired */}
-                      {required && !itemData.forceNotRequired && (
-                        <span style={{ color: "red", marginLeft: 4 }}>*</span>
-                      )}
+                    
                     </span>
                   )
                 }
                 labelAlign="left"
                 labelCol={type === 9 ? {} : { span: 24 }}
                 rules={
-                  required && !itemData.forceNotRequired
+                  required
                     ? [{ required: true, message: "This field is required" }]
                     : []
                 }

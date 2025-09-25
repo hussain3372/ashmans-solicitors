@@ -677,6 +677,11 @@ button:focus-visible {
 ::-webkit-scrollbar-thumb:hover {
   background-color: #253861;
 }
+
+.ant-switch-inner {
+  background: $primaryColor;
+}
+
 // forms
 
 .form {
@@ -701,7 +706,7 @@ button:focus-visible {
   }
 
   &-label {
-    color: $textColor;
+    color: $primaryColor;
     font-size: 14px;
   }
 
