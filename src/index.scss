@@ -321,8 +321,12 @@ button:focus-visible {
       .ant-collapse-header-text {
         font-size: 20px;
         font-weight: 600;
-        color: #0f3f62;
+        color: $primaryColor;
       }
+      .ant-collapse-header-text:hover {
+        color: $textColor;
+      }
+
     }
 
     .ant-collapse-content {
@@ -808,6 +812,12 @@ button:focus-visible {
         }
       }
     }
+  }
+}
+
+.ant-spin-container {
+  p {
+    color: $primaryColor;
   }
 }
 
