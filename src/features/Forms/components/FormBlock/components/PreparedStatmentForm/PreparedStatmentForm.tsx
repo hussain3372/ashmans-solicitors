@@ -263,7 +263,7 @@ export const PreparedStatmentForm = (props) => {
       <CustomModal
         open={modal}
         onClose={handleClose}
-        title="Prepared statement"
+        title="PREPARED STATEMENT"
         width={"70vw"}
         content={
           <div className="modal-content">
@@ -285,7 +285,7 @@ export const PreparedStatmentForm = (props) => {
                 onChange={(e) => {
                   onValuesChange("statement", e.target.value);
                 }}
-                label="Steatment"
+                label="Statement"
                 value={state?.statement}
                 style={{ overflow: "scroll", minHeight: "200px" }}
                 disabled={disabled}

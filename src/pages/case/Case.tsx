@@ -145,7 +145,7 @@ export const Case = () => {
                       className="simple_btn_round"
                       onClick={() => navigate(`/case/${instance}/edit?caseId=${id}`)}
                     >
-                      <img src={editIcon} />
+                      <img src={editIcon} width={16} height={16} />
                       Edit Case
                     </div>
                     <div
@@ -153,7 +153,7 @@ export const Case = () => {
                       onClick={() => setIsOpenTransfer(true)}
                       style={{ margin: "0 0 0 15px" }}
                     >
-                      <img src={Transfer} />
+                      <img src={Transfer} width={16} height={16} />
                       Transfer Case
                     </div>
                   </div>
@@ -211,7 +211,7 @@ export const Case = () => {
                           { slug: "date-first-contact" },
                           { slug: "office" },
                           { slug: "fee-earner" },
-                          { slug: "venue" },
+                          { slug: "police-station" },
                           { slug: "source" },
                           { slug: "funding" },
                         ]}
@@ -317,7 +317,7 @@ export const Case = () => {
       />
       <CustomModal
         title={"Discard this form?"}
-        subtitle={"You have unsaved changes, do you want to discard it?"}
+        subtitle={"Do you want to discard it?"}
         content={renderDiscardAction()}
         open={!!isDiscardModal}
         onClose={() => setIsDiscardModal(false)}

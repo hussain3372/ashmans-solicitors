@@ -112,11 +112,11 @@
   margin: 0 0 20px 0;
 
   &:hover {
-    background: #214c6e;
-    color: #fff;
+    background: #fff;
+    color: #375d79;
 
     & > * {
-      color: #fff; // make children text black on hover
+      color: #375d79; // make children text black on hover
     }
   }
 

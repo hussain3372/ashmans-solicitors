@@ -229,7 +229,7 @@ const formSlice = createSlice({
           source: getValueFromSlug(payload, "source"),
           office: getValueFromSlug(payload, "office"),
           "billing-status": getValueFromSlug(payload, "billing-status"),
-          venue: getValueFromSlug(payload, "police-station"),
+          // "venue": getValueFromSlug(payload, "police-station"),
           "police-station": getValueFromSlug(payload, "police-station"),
           "file-ref": getValueFromSlug(payload, "file-ref"),
           funding: getValueFromSlug(payload, "funding"),

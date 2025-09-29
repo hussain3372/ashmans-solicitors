@@ -597,6 +597,7 @@ export default function useCaseController() {
 
   const HendleSubmit = (type: string) => {
     form.validateFields().then((values) => {
+      setLoader(true)
       const payload: ClientData = {
         model: {
           ...values,
@@ -625,6 +626,7 @@ export default function useCaseController() {
           navigate(`/case/${instance}/view?caseId=${id}`);
         });
       }
+      setLoader(false)
     });
   };
 
@@ -659,7 +661,7 @@ export default function useCaseController() {
             </div>
             {transformName(name)}
           </div>
-          
+
         ))}
       </div>
     );
